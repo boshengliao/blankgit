@@ -26,11 +26,6 @@ def logout():
     session.pop('username', None)
     return redirect(url_for('index'))
 
-@app.route('/hhh')
-def hhh():
-    a = {'1':"如果这<是11\n\r或者/n"}
-    return render_template('hhh.html', will_not_be_escaped=a)
-
 app.secret_key = '123'
 
 if __name__ == '__main__':
